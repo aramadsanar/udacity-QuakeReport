@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingEnd="16dp">
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/mag_text"
+        android:background="@drawable/magnitude_circle"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        tools:text="8.9"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/location_offset"
+            tools:text="12km NW of"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorEarthquakeDetails"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:id="@+id/location_text"
+            android:textSize="16sp"
+            tools:text="San Francisco, CA"
+            android:textColor="@color/textColorEarthquakeLocation"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:gravity="end">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_text"
+        android:gravity="end"
+        tools:text="Mar 6, 2010"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_text"
+        android:gravity="end"
+        tools:text="3:00 PM"
+        />
+</LinearLayout>
+
+</LinearLayout>
